@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Customer Details</h1>
+    </header>
+    <main>
+      <form>
+        <div class="main">
+          <section class="container" id="fullname">
+            <p>Full Name <span class="asterisk">∗</span></p>
+            <div class="connected-info">
+              <div class="form-element">
+                <input type="text" id="firstName" name="firstName" />
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="form-element">
+                <input type="text" id="lastName" name="lastName" />
+                <label for="lastName">Last Name</label>
+              </div>
+            </div>
+            <div class="required" id="req-name">
+              <div class="exclamation">!</div>
+              This field is required
+            </div>
+          </section>
+          <section class="container" id="fulladdress">
+            <p>Address <span class="asterisk">∗</span></p>
+            <div>
+              <div class="form-element">
+                <input type="text" id="address" name="address" />
+                <label for="address">Street Address</label>
+              </div>
+              <div class="form-element">
+                <input type="text" id="addressline" name="addressline" />
+                <label for="addressline">Street Address Line 2</label>
+              </div>
+              <div class="connected-info">
+                <div class="form-element">
+                  <input type="text" id="city" name="city" />
+                  <label for="city">City</label>
+                </div>
+                <div class="form-element">
+                  <input type="text" id="province" name="province" />
+                  <label for="province">State / Province</label>
+                </div>
+              </div>
+              <div class="form-element">
+                <input type="text" id="zip" name="zip" />
+                <label for="zip">Postal / Zip Code</label>
+              </div>
+            </div>
+            <div class="required" id="req-address">
+              <div class="exclamation">!</div>
+              This field is required
+            </div>
+          </section>
+          <section class="container" id="phone-details">
+            <p>Phone Number <span class="asterisk">∗</span></p>
+            <div class="form-element">
+              <input
+                type="number"
+                id="phone"
+                name="phone"
+                placeholder="(000) 000-0000"
+              />
+            </div>
+            <div class="required" id="req-phone">
+              <div class="exclamation">!</div>
+              This field is required
+            </div>
+          </section>
+          <section class="container" id="email">
+            <p>E-mail</p>
+            <div class="form-element">
+              <input
+                type="email"
+                id="mail"
+                name="mail"
+                placeholder="ex: email@yahoo.com"
+              />
+              <label for="mail">example@example.com</label>
+            </div>
+            <div class="required" id="req-email">
+              <div class="exclamation">!</div>
+              Enter valid email address
+            </div>
+          </section>
+          <hr class="hr" />
+          <section class="container" id="about-us">
+            <p>How did you hear about us? <span class="asterisk">∗</span></p>
+            <select
+              id="select"
+              name="select"
+              placeholder="Please Select"
+              class="select"
+            >
+              <option value="pselect" id="pselect">Please Select</option>
+              <option value="none">None</option>
+              <option value="newspaper">Newspaper</option>
+              <option value="internet">Internet</option>
+              <option value="magazine">Magazine</option>
+              <option value="other">Other</option>
+            </select>
+            <div class="required" id="req-about">
+              <div class="exclamation">!</div>
+              This field is required
+            </div>
+          </section>
+          <section class="container other" id="other">
+            <p>Other <span class="asterisk">∗</span></p>
+            <div class="form-element">
+              <input
+                type="text"
+                id="select-other"
+                name="select-other"
+                class="select-other"
+              />
+            </div>
+            <div class="required" id="req-other">
+              <div class="exclamation">!</div>
+              Enter valid email address
+            </div>
+          </section>
+          <section class="container">
+            <p>Feedback about us:</p>
+            <div class="form-element">
+              <textarea id="feedback" name="feedback"></textarea>
+            </div>
+          </section>
+          <section class="container">
+            <p>Suggestions if any for further improvement:</p>
+            <div class="form-element">
+              <textarea id="suggestions" name="suggestions"></textarea>
+            </div>
+          </section>
+          <section class="container">
+            <p>Will you be willing to recomend us?</p>
+            <div class="check">
+              <div class="check-elem">
+                <input type="checkbox" id="yes" name="yes" />
+                <label for="yes">Yes</label>
+              </div>
+              <div class="check-elem">
+                <input type="checkbox" id="maybe" name="maybe" />
+                <label for="yes">Maybe</label>
+              </div>
+              <div class="check-elem">
+                <input type="checkbox" id="no" name="no" />
+                <label for="yes">No</label>
+              </div>
+            </div>
+          </section>
+          <section class="container">
+            <p>Please give reference of any two people whom you feel:</p>
+            <table class="table">
+              <thead class="t-header">
+                <tr>
+                  <th class="t-none"></th>
+                  <th class="t-elem h-left">Full Name</th>
+                  <th class="t-elem">Address</th>
+                  <th class="t-elem h-right">Contact Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="t-elem h-body-top">1</th>
+                  <td class="t-elem">
+                    <input type="text" class="t-input" id="r1-name" />
+                  </td>
+                  <td class="t-elem">
+                    <input type="text" class="t-input" id="r1-address" />
+                  </td>
+                  <td class="t-elem">
+                    <input type="text" class="t-input" id="r1-number" />
+                  </td>
+                </tr>
+                <tr>
+                  <th class="t-elem h-body-bottom">2</th>
+                  <td class="t-elem">
+                    <input type="text" class="t-input" id="r2-name" />
+                  </td>
+                  <td class="t-elem">
+                    <input type="text" class="t-input" id="r2-address" />
+                  </td>
+                  <td class="t-elem">
+                    <input type="text" class="t-input" id="r2-number" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+        <div class="footer">
+          <button class="submit" id="button">Submit</button>
+        </div>
+      </form>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
