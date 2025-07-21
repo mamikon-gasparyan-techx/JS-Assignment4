@@ -163,9 +163,9 @@ function valid(event) {
       select: document.querySelector("#select").value.trim(),
       feedback: document.querySelector("#feedback").value.trim(),
       suggestions: document.querySelector("#suggestions").value.trim(),
-      checkboxYes: document.querySelector("#yes").value,
-      checkboxMaybe: document.querySelector("#maybe").value,
-      checkboxNo: document.querySelector("#no").value,
+      checkbox: document.querySelector("#yes").value.trim(),
+      checkbox: document.querySelector("#maybe").value.trim(),
+      checkbox: document.querySelector("#no").value.trim(),
     };
 
     if (us.select === "other") {
