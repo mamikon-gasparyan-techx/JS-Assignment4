@@ -8,6 +8,9 @@ const validPhone = (phone) => {
   return phone.match(/^\d{10}$/);
 }
 
+let modal = document.querySelector("#modal");
+modal.style.display = "none";
+
 function valid(event) {
   event.preventDefault();
   let fname = document.querySelector("#firstName").value;
@@ -21,8 +24,9 @@ function valid(event) {
   let select = document.querySelector("#select").value;
   let other = document.querySelector("#select-other").value;
   let formIsValid = true;
-
   console.log("clicked");
+
+  
 
   if (fname == "" || lname == "") {
     document.querySelector("#firstName").style.background = "white";
@@ -216,6 +220,7 @@ function valid(event) {
     document.querySelector("#r2-name").value = "";
     document.querySelector("#r2-address").value = "";
     document.querySelector("#r2-number").value = "";
+    modal.style.display = "flex";
   }
 }
 
@@ -235,3 +240,7 @@ document.querySelector("#select").addEventListener("change", (e) => {
     document.querySelector("#req-other").style.display = "none";
   }
 });
+
+modal.addEventListener("click", ()=>{
+  modal.style.display = "none";
+})
