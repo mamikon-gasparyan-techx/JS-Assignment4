@@ -224,6 +224,7 @@ function valid(event) {
     document.querySelector("#r2-address").value = "";
     document.querySelector("#r2-number").value = "";
     modal.style.display = "flex";
+    modal.scrollIntoView({ behavior: "smooth" });
   }
 }
 
