@@ -6,7 +6,7 @@ const validEmail = (email) => {
 
 const validPhone = (phone) => {
   return phone.match(/^\d{10}$/);
-}
+};
 
 let modal = document.querySelector("#modal");
 modal.style.display = "none";
@@ -25,8 +25,6 @@ function valid(event) {
   let other = document.querySelector("#select-other").value;
   let formIsValid = true;
   console.log("clicked");
-
-  
 
   if (fname == "" || lname == "") {
     document.querySelector("#firstName").style.background = "white";
@@ -89,7 +87,8 @@ function valid(event) {
     formIsValid = false;
   } else {
     document.querySelector("#phone-details").style.backgroundColor = "white";
-    document.querySelector("#phone").style.border = "1px solid rgb(87, 100, 126)";
+    document.querySelector("#phone").style.border =
+      "1px solid rgb(87, 100, 126)";
     document.querySelector("#req-phone").style.display = "none";
     formIsValid = true;
   }
@@ -104,7 +103,8 @@ function valid(event) {
     formIsValid = false;
   } else {
     document.querySelector("#email").style.backgroundColor = "white";
-    document.querySelector("#mail").style.border = "1px solid rgb(87, 100, 126)";
+    document.querySelector("#mail").style.border =
+      "1px solid rgb(87, 100, 126)";
     document.querySelector("#req-email").style.display = "none";
     formIsValid = true;
   }
@@ -128,13 +128,16 @@ function valid(event) {
       formIsValid = false;
     } else {
       document.querySelector("#other").style.backgroundColor = "white";
-      document.querySelector("#select-other").style.border = "1px solid rgb(87, 100, 126)";
-      document.querySelector("#select").style.border = "1px solid rgb(87, 100, 126)";
+      document.querySelector("#select-other").style.border =
+        "1px solid rgb(87, 100, 126)";
+      document.querySelector("#select").style.border =
+        "1px solid rgb(87, 100, 126)";
       document.querySelector("#req-other").style.display = "none";
       formIsValid = true;
     }
   } else {
-    document.querySelector("#select").style.border = "1px solid rgb(87, 100, 126)";
+    document.querySelector("#select").style.border =
+      "1px solid rgb(87, 100, 126)";
     formIsValid = true;
   }
 
@@ -241,6 +244,6 @@ document.querySelector("#select").addEventListener("change", (e) => {
   }
 });
 
-modal.addEventListener("click", ()=>{
+modal.addEventListener("click", () => {
   modal.style.display = "none";
-})
+});
